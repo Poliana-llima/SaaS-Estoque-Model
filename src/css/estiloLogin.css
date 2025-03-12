@@ -1,0 +1,75 @@
+body{
+    font-family: "Inter Tight", sans-serif;
+}
+
+.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    background-image:linear-gradient(to left, blue, orangered, yellow);
+    background-size: 500% 100%;
+    animation: degrade-animado-login 5s  infinite alternate;
+}
+
+@keyframes degrade-animado-login {
+    0%{
+       background-position-x: 0%; 
+    }
+    100%{
+        background-position-x: 100%; 
+    }
+}
+
+.box-login{
+    /*margin-top: 65px; caso queira inserir a logo em cima*/
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.email-login input, .senha-login input{
+    margin-top: 15px;
+    border-radius: 15px;
+    border: none;
+    width: 200px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #babbbc;
+}
+
+.btn-login input{
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: none;
+    width: 200px;
+    height: 40px;
+    background-color: #2563EB;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-login:hover{
+    background-color: #10B981 ;
+}
+
+input::placeholder{
+    color: #fff
+}
+
+h1{
+    color: #1E3A8A;
+    margin-top: 30px;
+}
+
+p{
+    color:#babbbc;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}

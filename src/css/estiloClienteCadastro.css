@@ -1,0 +1,214 @@
+body {
+    font-family: "Inter Tight", sans-serif;
+}
+
+/* Estilização do cabeçalho */
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2563EB;
+}
+.logo-marca img{
+    width: 100px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+.btn-logout {
+    margin-right: 50px;
+    width: 25px;
+    height: 25px;
+}
+
+.btn-logout img {
+    filter: invert(1);
+}
+
+.btn-logout img:hover{
+    opacity: 0.7;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.menu-lateral {
+    width: 250px;
+    flex-shrink: 0;
+    background: #335094;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 80px;
+    height: calc(100 - 80px);
+    padding-bottom: 20px;
+    overflow-y: auto;
+}
+
+.menu-lateral ul ul li a{
+    background-color:#335094;
+}
+
+.menu-lateral ul ul li a:hover{
+    background-color: #506fb8;
+}
+
+.menu-lateral ul ul{
+    display: none;
+}
+.lista-sub-menu.ativar{
+    display: block;
+}
+
+
+.form-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-right: 50px;
+}
+
+
+/* Estilização da lista do menu */
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-principal a{
+    display: flex;
+    color: #fff;
+}
+
+.menu-lateral .menu-principal {
+    padding: 10px 20px;
+}
+
+.menu-lateral .sub-menu {
+    padding: 5px 30px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+/* menu conf gestão*/
+.menu-config {
+    margin-top: auto;
+    margin-left: 20px;
+}
+
+.menu-config img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.menu-config:hover img {
+    opacity: 0.7;
+}
+
+.grupo-inicial{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* estilização do formulário*/
+form {
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+label {
+    font-weight:500;
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: solid 0.5px #babbbc;
+}
+
+.grupo-persona {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.grupo-persona label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.grupo-persona input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.endereco{
+    display: flex;
+    justify-content: space-between;
+}
+
+.end-esquerdo{
+    width: 100%;
+    margin-right: 50px;
+}
+
+.dados-de-contato {
+    display: flex;
+    justify-content: space-between;
+}
+
+.email{
+    width: 100%;
+    margin-right: 50px;
+}
+.btns{
+    display: flex;
+}
+
+.btn-limpar{
+    margin: 30px 20px 20px 0;
+    align-self: center;
+    padding: 10px;
+    width: 150px;
+    background-color: #babbbc;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.btn-salvar {
+    margin: 30px 20px 20px 0;
+    align-self: center;
+    padding: 10px;
+    width: 150px;
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-salvar:hover{
+    background-color: #10B981 ;
+}
